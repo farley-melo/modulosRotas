@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {CursoModule} from './curso/curso.module';
-import {HomeModule} from './home/home.module';
 import {CursoService} from './shared/curso.service';
+import {AlunoService} from './shared/aluno.service';
 
 @NgModule({
   declarations: [
@@ -13,9 +12,9 @@ import {CursoService} from './shared/curso.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,CursoModule,HomeModule
+    AppRoutingModule
   ],
-  providers: [CursoService],
+  providers: [CursoService,AlunoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
