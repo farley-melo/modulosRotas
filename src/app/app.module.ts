@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {CursoService} from './shared/curso.service';
 import {AlunoService} from './shared/aluno.service';
+import {LoginService} from './shared/login.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import {AlunoService} from './shared/aluno.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [CursoService,AlunoService],
+  providers: [CursoService,AlunoService,LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

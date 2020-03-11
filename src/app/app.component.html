@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary" *ngIf="isLoged">
   <a class="navbar-brand" [routerLink]="['/home']">Home</a>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
@@ -9,6 +9,7 @@
         <a class="nav-link" [routerLink]="['/aluno']" >Alunos</a>
       </li>
     </ul>
+    <button class="btn btn-success" (click)="logout()">log out</button>
   </div>
 </nav>
 
