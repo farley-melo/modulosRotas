@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {CursoService} from './shared/curso.service';
 import {AlunoService} from './shared/aluno.service';
 import {LoginService} from './shared/login.service';
+import {LoginAuthGuard} from './shared/login-auth.guard';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import {LoginService} from './shared/login.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [CursoService,AlunoService,LoginService],
+  providers: [CursoService,AlunoService,LoginService,LoginAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
